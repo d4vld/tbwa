@@ -154,7 +154,7 @@ $( document ).ready(function() {
 		}
 	});
 	
-	$(".play").click(function() {
+	$(".play, .caso1 .boton").click(function() {
 		$(".video-case-wrapp").addClass("active");
 		$('.video-case').get(0).play();
 		$('.video-case').get(0).currentTime = 0;

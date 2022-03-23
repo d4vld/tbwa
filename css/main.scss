@@ -1285,6 +1285,11 @@ body{
   	line-height: 1.5vw;
   }
 
+  a{
+  	color: black;
+  	text-decoration: underline;
+  }
+
   .cerrar-txt-completo{
   	cursor: pointer;
     margin-top: 1vw;
@@ -1779,6 +1784,8 @@ body{
 /*MOBILE*/
 @media (orientation: portrait){
 
+	sup{font-size: 4vw;}
+
 	.arrow{
 		img{
 			width: 9vw;
@@ -1972,7 +1979,10 @@ body{
 			
 		}
 		
-
+		.second.home-text a{
+			font-size: 4vw;
+			padding: 4vw;
+		}
 
 		.second.home-text p{
 			 font-size: 18px;
@@ -2110,6 +2120,8 @@ body{
 		&.cultura4{
 			.parrafo{
 				a{
+					padding: 2.5vw;
+					
 					span{
 						transform: skewX( -20deg);
     				display: block !important;
@@ -2238,7 +2250,7 @@ body{
 
 				p{
 					font-size: 3.5vw;
-					line-height: 15px;
+					line-height: 20px;
 
 					br{
 						display: none;
@@ -2405,6 +2417,7 @@ body{
 	.video-case-wrapp{
 		.border-video-case{
 			width: 95%;
+			height: initial;
 
 			.cerrar-video{
 				width: 30px;

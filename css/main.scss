@@ -1113,7 +1113,7 @@ body{
 					}
 
 					p{
-						margin-bottom: 15px;
+						margin-bottom: 1vw;
 					}
 				}
 			}
@@ -1915,7 +1915,10 @@ body{
 			.cookies-wrapp{
 				transition: none;
 
-				p{padding-bottom: 4vw;}
+				p{
+					padding-bottom: 4vw;
+					line-height: 5vw;
+				}
 
 				.privacidad{font-size: 3vw;}
 
@@ -1925,6 +1928,7 @@ body{
 					.aceptar-cookies,
 					.rechazar-cookies{
 						padding: 2vw;
+						    font-size: 3vw;
 					}
 				}
 				
@@ -2022,6 +2026,7 @@ body{
 				.direccion{
 					width: 100%;
 					font-size: 12px;
+					bottom: 20vw;
 
 					.row{
 				    width: 50%;
@@ -2134,10 +2139,6 @@ body{
 			position: relative;
     	height: 100%;
 
-    	.play{
-    		position: absolute;
-    		top: 13vh;
-    	}
 
     	.inverso{
     		margin-top: 40vh;
@@ -2156,7 +2157,12 @@ body{
 			}
 
 			.play{
+				position: absolute;
+    		top: 13vh;
 				width: 60px;
+				position: absolute;
+		    left: 50%;
+		    transform: translate(-50%, 0);
 
 				.triangulo-wrapp{
 					width: 60px;
@@ -2168,6 +2174,9 @@ body{
 
     			.triangulo{
     				transform: skewX(0deg);
+    				border-left: 2.8vw solid #000;
+				    border-top: 2.5vw solid transparent;
+				    border-bottom: 2.5vw solid transparent;
     			}
 				}
 			}
@@ -2225,6 +2234,7 @@ body{
 
 				span{
 					transform: skewX(0deg);
+					    font-size: 3vw;
 				}
 
 				a{

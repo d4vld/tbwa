@@ -85,7 +85,7 @@ $( document ).ready(function() {
 
 
     /*elementos aleatorios al cargar pagina*/
-    var video = ['attractor.mp4', 'ElectricLooped.mp4', 'fluorescent.mp4'];
+    var video = ['particles.mp4', 'ElectricLooped.mp4', 'fluorescent.mp4', 'squares.mp4'];
  	  $('.video-home').attr({'src': 'video/' + video[Math.floor(Math.random() * video.length)] });
 	/*****/
 

@@ -85,8 +85,8 @@ $( document ).ready(function() {
 
 
     /*elementos aleatorios al cargar pagina*/
-    var video = ['particles.mp4', 'ElectricLooped.mp4', 'fluorescent.mp4', 'squares.mp4'];
- 	  $('.video-home').attr({'src': 'video/' + video[Math.floor(Math.random() * video.length)] });
+    //var video = ['particles.mp4', 'ElectricLooped.mp4', 'fluorescent.mp4', 'squares.mp4'];
+ 	  //$('.video-home').attr({'src': 'video/' + video[Math.floor(Math.random() * video.length)] });
 	/*****/
 
 
@@ -302,7 +302,7 @@ $( document ).ready(function() {
         });
     });
 
-    $(window).scroll( function(){
+    /*$(window).scroll( function(){
         $('.waypoint7').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -313,25 +313,10 @@ $( document ).ready(function() {
    				$(".linea").css({"background-color":"#000000"});
             }
         });
-    });
+    });*/
 
 
 	/*CULTURA*/
-
-	setTimeout(
-     	function(){
-        	$(".casos.cultura1").addClass("zoomOut");
-        	$(".cultura1 .wrapp-casos").addClass("active");
-    },  4500);
-
-
-    if ($(window).width() <= 750) {
-		setTimeout(
-	     	function(){
-	        	$(".casos.cultura1").addClass("zoomOut");
-	        	$(".cultura1 .wrapp-casos").addClass("active");
-	    },  0);
-	}
 
 
 	$(window).scroll( function(){
@@ -339,8 +324,9 @@ $( document ).ready(function() {
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
-				$(".linea").css({"background-color":"#000000"});
-				$(".st0, .st1").css({"fill":"#000000"});
+				$(".linea").css({"background-color":"#ffffff"});
+
+				$('.video-cultura').get(0).play();
             }
         });
     });
@@ -363,7 +349,7 @@ $( document ).ready(function() {
             }else{
 				$(".fondo-cultura-1").removeClass("animate-left");
 				$(".forma-blanca-der").removeClass("active");
-				$(".st0").css({"fill":"#000000"});
+				$(".st0").css({"fill":"#fff"});
 			}
         });
     });
@@ -458,7 +444,7 @@ $( document ).ready(function() {
     },  4600);
     if ($(window).width() <= 728) {  
        $(".mosaico .wrapp .persona-mobile").unwrap();
-   }
+   	}
 
 
 

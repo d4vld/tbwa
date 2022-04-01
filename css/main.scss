@@ -971,24 +971,19 @@ body{
 
 
 	&.cultura1{
-		background-image: url("../img/fondo_cultura.jpg");
-		background-size: 110vw;
-		background-position: center;
-		transition: all 3s ease-out 0s;
+		position: relative;
+		overflow: hidden;
+		color: white;
 
-		&.zoomOut{
-			background-size: 80vw;
+		.video-cultura{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			min-width: 100%;
+  		min-height: 100%;
+			z-index: -1;
+
 		}
-
-		.wrapp-casos{
-			opacity: 0;
-			transition: all 2s ease-out 0s;
-
-			&.active{
-				opacity: 1;
-			}
-		}
-		
 	}
 
 	&.cultura4{
@@ -1537,6 +1532,7 @@ body{
 				.cerrar-modal{
 					cursor: pointer;
 					width: 2.5vw;
+					transform: skew(-18deg);
 				}
 
 				span{
@@ -2409,10 +2405,12 @@ body{
 	.more{
 		display: block !important;
 		position: absolute;
-		width: 15vw;
+		width: 7vw;
 		left: 50%;
 		top: 90%;
 		transform: translate(-50%, -50%);
+
+		.mas-info{fill: #fff;}
 
 		.st0{fill: #fff !important;}
 	}

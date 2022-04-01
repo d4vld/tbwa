@@ -551,6 +551,9 @@ body{
 						text-decoration: none;
 						transition: all 0.5s ease-out 0s;
 						transform: scale(1.5);
+
+						&:first-letter{
+							text-transform: uppercase;						}
 					}
 				}
 			}
@@ -971,6 +974,7 @@ body{
 
 
 	&.cultura1{
+<<<<<<< HEAD
 		position: relative;
 		overflow: hidden;
 		color: white;
@@ -984,6 +988,26 @@ body{
 			z-index: -1;
 
 		}
+=======
+		transition: all 3s ease-out 0s;
+		position: relative;
+		color: white;
+
+		.video-cultura{
+			position: absolute;
+			top: 0;
+			left: 0;
+			max-width: 100%;
+			min-height: 100%;
+			z-index: -1;
+		}
+
+		.wrapp-casos{
+			transition: all 2s ease-out 0s;
+
+		}
+		
+>>>>>>> 3ae8864f896898d78c289c37286889d912deee3d
 	}
 
 	&.cultura4{

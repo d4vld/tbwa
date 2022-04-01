@@ -303,7 +303,7 @@ $( document ).ready(function() {
         });
     });
 
-    $(window).scroll( function(){
+    /*$(window).scroll( function(){
         $('.waypoint7').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
@@ -314,11 +314,12 @@ $( document ).ready(function() {
    				$(".linea").css({"background-color":"#000000"});
             }
         });
-    });
+    });*/
 
 
 	/*CULTURA*/
 
+<<<<<<< HEAD
 	setTimeout(
      	function(){
         	$(".casos.cultura1").addClass("zoomOut");
@@ -335,14 +336,23 @@ $( document ).ready(function() {
 	}
 
  
+=======
+
+>>>>>>> 3ae8864f896898d78c289c37286889d912deee3d
 	$(window).scroll( function(){
         $('.waypoint-cultura-0').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
+<<<<<<< HEAD
 				$(".linea").css({"background-color":"#fff"});
 				$('.video-home').get(0).play();
 				$(".back-general-color").css({"fill":"#fff"});
+=======
+				$(".linea").css({"background-color":"#ffffff"});
+
+				$('.video-cultura').get(0).play();
+>>>>>>> 3ae8864f896898d78c289c37286889d912deee3d
             }
         });
     });
@@ -367,7 +377,11 @@ $( document ).ready(function() {
             }else{
 				$(".fondo-cultura-1").removeClass("animate-left");
 				$(".forma-blanca-der").removeClass("active");
+<<<<<<< HEAD
 				
+=======
+				$(".st0").css({"fill":"#fff"});
+>>>>>>> 3ae8864f896898d78c289c37286889d912deee3d
 			}
         });
     });
@@ -462,7 +476,7 @@ $( document ).ready(function() {
     },  4600);
     if ($(window).width() <= 728) {  
        $(".mosaico .wrapp .persona-mobile").unwrap();
-   }
+   	}
 
 
 

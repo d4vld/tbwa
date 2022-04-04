@@ -987,6 +987,10 @@ body{
   		min-height: 100%;
 			z-index: -1;
 
+			video{
+				width: 100%;
+			}
+
 		}
 
 		transition: all 3s ease-out 0s;
@@ -1049,9 +1053,16 @@ body{
 		width: 100%;
 		transform: skewX(20deg);
 		transition: all .5s ease-out 0s;
-
+		
 		&.oculto{
 			opacity: 0;
+			margin-top: -10vw;
+			transition: all .2s ease-out 0s;
+		}
+
+		&.active{
+			margin-top: 0;
+			opacity: 1;
 		}
 
 		.subtitle-casos{
@@ -1888,8 +1899,15 @@ body{
 
 	}
 
-
-
+	.fondos{
+		.fondos-wrapp{
+			img{
+				&.animate-left{left: 0; right: 0;}
+				&.animate-right{right: 0; left: 0;}
+			}
+		}
+	}
+	
 
 
 	body{
@@ -2096,6 +2114,7 @@ body{
 
 				&.active{
 					left: -33%;
+					opacity: .6;
 				}
 			}
 
@@ -2106,6 +2125,7 @@ body{
 
 				&.active{
 					left: -33%;
+					opacity: .6;
 				}
 			}
 
@@ -2117,6 +2137,7 @@ body{
 
 				&.active{
 					right: -40%;
+					opacity: .6;
 				}
 			}
 

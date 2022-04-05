@@ -3,6 +3,7 @@ $(this).scrollTop(0);
 
 $( document ).ready(function() {
 
+
 	$('#fullpage').fullpage({
 	    licenseKey: '1DFB76D6-E47E4819-9534C971-BE0C78B6',
 		scrollBar: true,
@@ -190,6 +191,9 @@ $( document ).ready(function() {
 					function(){
 						$(".caso2 .wrapp-casos").removeClass("active").addClass("oculto");
 				}, 	1500);
+
+            }else{
+            	$(".caso2 .wrapp-casos").addClass("oculto").removeClass("active");
             }
         });
     });
@@ -528,6 +532,17 @@ $( document ).ready(function() {
 		});
 	});
 
+	/*animaciones interior trabajos*/
+
+
+	setTimeout(
+     	function(){
+        	$(".caso_solo .inverso").addClass("active");
+
+    },  2500);
+
+    
+
 
 	/**mas info directiva equipo**/
 	$('.cerrar-modal').click(function() {
@@ -615,6 +630,7 @@ $( document ).ready(function() {
 	        	$(".cookies").removeClass("active");
 	    },  500);
 	});
+
 
 
 

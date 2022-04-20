@@ -348,9 +348,12 @@ $( document ).ready(function() {
 			   	$(".forma-blanca3").removeClass("oculto");
                 $(".forma-negra-der").removeClass("active");
 				$(".forma-amarila-der").removeClass("active");
-                $(".fondo6").addClass("animate-right");
+                
                 $(".st1").css({"fill":"#ffc411"});
                 $(".back-general-color").css({"fill":"#000"});
+
+                $(".fondo6").addClass("animate-right").removeClass("oculto");
+                $(".fondo7").removeClass("animate-right").addClass("oculto");
             }
         });
     });
@@ -368,27 +371,30 @@ $( document ).ready(function() {
 				}, 	1500);
 
 
-   				$(".forma-amarila-der").addClass("active");
+   				//$(".forma-amarila-der").addClass("active");
    				$(".forma-blanca-der2").removeClass("active");
-   				$(".forma-amarila-izq").removeClass("active");
+   				$(".forma-amarila-der").removeClass("active");
    				$(".st1").css({"fill":"#ffc411"});
    				$(".linea").css({"background-color":"#ffffff"});
+
+   				$(".fondo6").removeClass("animate-right").addClass("oculto");
+   				$(".fondo7").removeClass("animate-right").removeClass("oculto");
             }
         });
     });
 
-    /*$(window).scroll( function(){
+    $(window).scroll( function(){
         $('.waypoint7').each( function(i){
             var bottom_of_object = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             if( bottom_of_window > bottom_of_object ){
-   				$(".forma-blanca-der2").addClass("active");
-   				$(".forma-amarila-izq").addClass("active");
+ 
+   				$(".forma-amarila-der").addClass("active");
    				$(".st1").css({"fill":"#000000"});
    				$(".linea").css({"background-color":"#000000"});
             }
         });
-    });*/
+    });
 
 
 	/*CULTURA*/

@@ -163,11 +163,23 @@ $( document ).ready(function() {
 		$('.video-case').get(0).currentTime = 0;
 	});
 
+	$(".spot").click(function() {
+		$(".video-spot-wrapp").addClass("active");
+		$('.video-spot').get(0).play();
+		$('.video-spot').get(0).currentTime = 0;
+	});
 
-	$(".cerrar-video").click(function() {
+
+	$(".video-case-wrapp .cerrar-video").click(function() {
 		$(".video-case-wrapp").removeClass("active");
 		$('.video-case').get(0).currentTime = 0;
 		$('.video-case').get(0).pause();
+	});
+
+	$(".video-spot-wrapp .cerrar-video").click(function() {
+		$(".video-spot-wrapp").removeClass("active");
+		$('.video-spot').get(0).currentTime = 0;
+		$('.video-spot').get(0).pause();
 	});
 
 

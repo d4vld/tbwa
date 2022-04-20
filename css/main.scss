@@ -74,6 +74,7 @@ sup{
 
 			&.active{
 				opacity: 1;
+				margin-top: 0;
 			}
 		}
 	}
@@ -1366,7 +1367,8 @@ body{
 }
 
 
-.video-case-wrapp{
+.video-case-wrapp,
+.video-spot-wrapp{
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -1802,6 +1804,7 @@ body{
 				    top: 50%;
 				    transform: translate(-50%, -50%) skewX(-20deg);
 
+				    &.eci{background-image: url("../img/casos_eci_carrusel.jpg");}
 				    &.correos{background-image: url("../img/casos_correos_carrusel.jpg");}
 				    &.bigGood{background-image: url("../img/caso_md.jpg");}
 				    &.agradecimientos{background-image: url("../img/casos_ruta_carrusel.jpg");}
@@ -1809,6 +1812,9 @@ body{
 				    &.american{background-image: url("../img/casos_american_carrusel.jpg");}
 				    &.paredes{background-image: url("../img/casos_paredes_carrusel.jpg");}
 				    &.basuraleza{background-image: url("../img/casos_basuraleza_carrusel.jpg");}
+				    &.lidl_1{background-image: url("../img/casos_lidl_marca_carrusel.jpg");}
+				    &.lidl_2{background-image: url("../img/casos_lidl_navidad_carrusel.jpg");}
+				    &.nissan{background-image: url("../img/casos_nissan_batman_carrusel.jpg");}
 					}
 					
 					img{

@@ -28,7 +28,7 @@ $( document ).ready(function() {
 
   	$('.works-wrapp').slick({
 		slidesToShow: 4,
-  		slidesToScroll: 4,
+  		slidesToScroll: 2,
   		prevArrow: ".prev-arrow",
   		nextArrow: ".next-arrow",
   		responsive: [

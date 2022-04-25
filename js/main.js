@@ -652,6 +652,17 @@ $( document ).ready(function() {
 
 
 
+	/*valores formulario*/
+
+	$(".submit").click(function() {
+		var nombre = $("#name").val();
+		var apellido = $("#lastname").val();
+		var email = $("#email").val();
+		var empresa = $("#empresa").val();
+		var cargo = $("#cargo").val();
+
+	});
+	
 
 
 /*fin*/

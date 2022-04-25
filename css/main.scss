@@ -1852,6 +1852,120 @@ body{
 }
 
 
+/*BACKSLASH*/
+
+.backslash{
+	background-color: white;
+	border: 1px solid #fff;
+	overflow-y: scroll;
+
+	header{
+		background-color: black;
+		padding: 18px 28px;
+		height: 113px;
+		display: flex;
+		align-items: center;
+
+		img{
+			max-width: 214px;
+    	padding: 20px;
+		}
+	}
+
+	.banner{
+		padding: 100px 48px;
+
+		img{
+			max-width: 100%;
+		}
+	}
+
+	.formulario{
+		text-align: center;
+		padding-bottom: 150px;
+
+		input{
+			padding: 12px;
+			border: 1px solid #ccc;
+	    background: #fafafa;
+	    color: #000;
+	    font-family: sans-serif;
+	    border-radius: 2px;
+		}
+
+		h1{
+			font-family: "Averta-Regular";
+			font-size: 35px;
+			letter-spacing: .08em;
+		}
+
+		p{
+			font-family: "Averta-Bold";
+			font-size: 15px;
+			padding: 25px 0;
+		}
+
+		form{
+			text-align: left;
+			max-width: 1226px;
+			margin: 0 auto;
+			font-family: arial;
+
+			label{
+				padding: 25px 0 10px;
+			}
+
+			.name{
+				.name-wrapp{
+					display: flex;
+					justify-content: space-between;
+
+					.w50{
+						width: 49%;
+
+						input{
+							width: 100%;
+							margin: 15px 0 5px;
+						}
+
+						label{font-size: 14px;}
+					}
+				}
+			}
+
+			.input-wrapp{
+				display: flex;
+				flex-direction: column;
+			}
+
+
+			.submit{
+				margin-top: 25px;
+				cursor: pointer;
+				border-radius: 3px;
+				color: #222;
+				border: 2px solid black;
+				padding: 14px 35px;
+				transition: all .5s ease-out 0s;
+				letter-spacing: 2px;
+				font-weight: bold;
+
+				&:hover{
+					background-color: #222;
+    			color: #fff;
+				}
+			}
+		}
+
+
+
+
+	}
+
+}
+
+
+
 /*MOBILE*/
 
 

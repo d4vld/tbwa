@@ -1,3 +1,5 @@
+import {saveTask} from './firebase.js';
+
 
 $(this).scrollTop(0);
 
@@ -652,8 +654,36 @@ $( document ).ready(function() {
 
 
 
+	/*firebase*/
 
+	
 
+	const form = document.getElementById("contacForm");
+
+	form.addEventListener('submit', (e) => {
+		e.preventDefault();
+
+		const name = form['name']
+		const lastname = form['lastname']
+		const email = form['email']
+		const empresa = form['empresa']
+		const cargo = form['cargo']
+		const telefono = form['telefono']
+
+		saveTask(
+			name.value, 
+			lastname.value,
+			email.value,
+			empresa.value,
+			cargo.value,
+			telefono.value
+		);
+
+		$(".enviado").removeClass("oculto").addClass("active");
+		
+		form.reset();
+	});
+	
 
 
 /*fin*/
